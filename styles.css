@@ -1,0 +1,182 @@
+
+/* above all is for header area*/
+
+
+h3 {
+    color:crimson;
+    margin:20px 20px;
+}
+
+h4 {
+    font-size: 40px;
+    margin:20px 20px;
+}
+p{
+    font-size: 20px;
+    margin:20px 20px;
+}
+
+button{
+    margin:20px 20px;
+    padding: 5px 20px 7px 20px;
+    background-color:crimson;
+    color: #ffffff;
+    border: 1px solid  #ccc;
+    border-radius: 20px;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content img {
+    margin-left: 20px;
+    max-width: 100%;
+    height:500px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    flex-shrink: 0;
+}
+
+.servicepara{
+    margin-top: 55px;
+}
+/* */
+#carouselExampleIndicators img,
+#carouselExampleIndicators iframe {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide iframe by default */
+/* */
+.img-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Adjust height as per your design */
+}
+
+.img-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.img-container:hover iframe {
+    opacity: 1;
+    visibility: visible;
+}
+
+#carouselExampleIndicators iframe {
+    opacity: 0;
+    visibility: hidden;
+}
+#image, #content {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#image {
+    opacity: 1;
+    visibility: visible;  /* from #image to lframe it is used to show the hide unhide functionality on slides where readmore file comes*/
+}
+#content {
+    opacity: 0;
+    visibility: hidden;
+}
+iframe {
+    border: none; /* Removes default border */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: rgba(0, 0, 0, 0.5); /* Adding background color for better visibility */
+padding: 10px; /* Adding padding for better click area */
+border-radius: 50%; /* Making it circular */
+}
+.carousel-control-prev,
+.carousel-control-next {
+width: 5%; /* Adjusting the width for better visibility inside the image */
+}
+.carousel-inner {
+position: relative;
+}
+.carousel-item img {
+width: 100%; /* Ensuring the images take up the full width of the carousel item */
+height: 500px; /* Maintaining the aspect ratio of the images */
+}
+.carousel-indicators {
+position: absolute;
+bottom: -30px; /* Position the indicators outside the carousel */
+left: 40%;
+transform: translateX(-50%);
+}
+
+/**/
+.description-box {
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border-radius: 20px;
+  }
+  
+  .image-container img {
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: 580px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container without stretching */
+    border-radius: 20px;
+  }
+  .description-box p {
+    margin-bottom: 10px;
+  }
+  .custom-height{
+    height: 100px;
+  }
+
+
+  /*expert growt css */
+  .expert-growth-section {
+    text-align: center;
+    margin: 50px 0;
+    padding-left: 30px;
+}
+
+.company-growth-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.growth-box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(25% - 40px);
+}
+
+.growth-box h5 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.growth-box p {
+    font-size: 1.2em;
+}
+
